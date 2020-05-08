@@ -1,0 +1,32 @@
+doctype html
+html
+	head
+		title Boda-Boda Banja
+	body
+	
+		h1 Boda-Boda Banja
+		table
+			thead
+				tr
+					th Name
+					th Date
+					th Nationaltiy
+					th Email
+					th Vehicle
+					th Contact
+					th WorkindDays
+					th DateofBirth
+					th Password
+					th Workid
+			tbody
+				each customer in customers
+					tr
+					td #{customer.name}
+					td #{customer.Date}
+					td #{customer.phone}
+					td #{customer.nan}
+					td #{customer.nin}
+					td #{customer.vehicle}
+					td #{customer.refname}
+					td #{customer.refnum}
+					td #{customer.refwork}

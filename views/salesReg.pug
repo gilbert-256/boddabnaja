@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/static/form.css")
+    title Boda Boda Banja
+  body
+    form.form-style-9(action="/user/salesList" method="POST" style="z-index:1")
+      h1 Sales Registration
+      ul
+        li
+          input.field-style.field-split.align-left(type="text" name="name" placeholder="Name")
+          input.field-style.field-split.align-right(type="text" name="Date" placeholder="Current Date")
+        li
+          input.field-style.field-split.align-left(type="text" name="nationality" placeholder="Nationality")
+          input.field-style.field-split.align-right(type="text" name="email" placeholder="Email")
+        li
+          input.field-style.field-split.align-left(type="text" name="vehicle" placeholder="Vehicle Needed")
+          input.field-style.field-split.align-right(type="text" name="contact" placeholder="Phone Contact")
+        li
+          input.field-style.field-split.align-left(type="text" name="wkds" placeholder="Number of Working Days")
+          input.field-style.field-split.align-right(type="text" name="dob" placeholder="Date of Birth" required)
+        li
+          input.field-style.field-split.align-right(type="text" name="wkid" placeholder="Working Id" required)
+          label(for="") Role
+          input(type="radio" required="" name="role")
+          | Sales Executive
+          input(type="radio" required="" name="role")
+          | Supervisor
+        li
+        
+
+        
+         
+        input(type="submit" value="Register")
+        input(type="reset" placeholder="Cancel" style="margin-left: 70px;")

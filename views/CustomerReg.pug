@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet" href="/static/form.css")
+    title Boda Boda Banja
+  body
+    form.form-style-9(action="/user/CustomerList" method="POST" style="z-index:1")
+      h1 Customer Registration
+      ul
+        li
+          input.field-style.field-split.align-left(type="text" name="name" placeholder="Name")
+          input.field-style.field-split.align-right(type="text" name="Date" placeholder="Current Date")
+        li
+          input.field-style.field-split.align-left(type="text" name="phone" placeholder="Phone")
+          input.field-style.field-split.align-left(type="text" name="phone" placeholder="File")
+          
+        li
+          input.field-style.field-split.align-left(type="text" name="nan" placeholder="Nationality")
+          input.field-style.field-split.align-right(type="text" name="nin" placeholder="NIN")
+        li
+          input.field-style.field-split.align-left(type="text" name="dob" placeholder="Date of Birth")
+          input.field-style.field-split.align-right(type="text" name="vehicle" placeholder="Vehicle Needed")
+        li
+          input.field-style.field-split.align-left(type="text" name="refname" placeholder="Refree's Name")
+          input.field-style.field-split.align-right(type="text" name="refnum" placeholder="Refree's Number")
+        li
+          input.field-style.field-split.align-left(type="text" name="refwork" placeholder="Refree's Work")
+          input.field-style.field-split.align-right(type="text" name="refdob" placeholder="Refree's Date of Birth")
+        li
+          input.field-style.field-split.align-left(type="select" name="pay2" placeholder="Down payment 2 years")
+          input.field-style.field-split.align-right(type="text" name="monthpay" placeholder="Monthy Pay")
+        li
+          input.field-style.field-split.align-left(type="text" name="stage" placeholder="Stage Name")
+          input.field-style.field-split.align-right(type="text" name="Other" placeholder="Other Loans")
+        li
+          label(for="") Marrital Status
+          input(type="radio" required="" name="status")
+          | Married
+          input(type="radio" required="" name="status")
+          | Single
+        input(type="submit" value="Register")
+        input(type="reset" placeholder="Cancel" style="margin-left: 70px;")
